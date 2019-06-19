@@ -1,0 +1,58 @@
+baseURL = "https://veremenko.com/"
+languageCode = "en-us"
+title = "Yaroslav Veremenko"
+theme = "minimal"
+# disqusShortname = "username" # delete this to disable disqus comments
+googleAnalytics = ""
+
+[params]
+    author = "Calin Tataru"
+    description = "Software Developer and tinkerer from Alberta, Canada"
+    githubUsername = ""
+    accent = "purple"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Raleway" # should match the name on Google Fonts!
+    highlight = false
+    highlightStyle = "default"
+    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    name = "Resume"
+    url = "/resume.pdf"
+    [menu.main.params]
+        newtab = true
+
+# Social icons to be shown on the right-hand side of the navigation bar.
+# The "name" field should match the name of the icon in Font Awesome.
+# The list of available icons can be found at http://fontawesome.io/icons.
+
+[[menu.icon]]
+    url = "mailto:yaroslav@veremenko.info"
+    name = "fas fa-envelope"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/veremenko-y/"
+    name = "fab fa-github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/yaroslav_ver/"
+    name = "fab fa-twitter"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/yaroslavveremenko/"
+    name = "fab fa-linkedin"
+    weight = 4
+
+# [[menu.icon]]
+    # url = "https://www.stackoverflow.com/username/"
+    # name = "fab fa-stack-overflow"
+    # weight = 5

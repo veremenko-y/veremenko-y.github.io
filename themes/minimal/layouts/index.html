@@ -1,0 +1,14 @@
+{{ partial "header" . }}
+
+<main>
+    <div class="intro">
+        {{ with .Site.Params.profilePic }} <img class="profile" src="{{ . }}"> {{ end }}
+        <h1>{{ .Site.Title }}</h1>
+        <h2>{{ markdownify .Site.Params.Description }}</h2>
+        <h3>My weird corner of the internet</h3>
+        <a class="btn btn-lg btn-default  text-center" href="/resume.pdf" role="button" target="_blank">Check out my Resume</a>
+        {{ with .Content }} <div class="homepage-content text-justify">{{ . }}</div> {{ end }}
+    </div>
+</main>
+
+{{ partial "footer" . }}
